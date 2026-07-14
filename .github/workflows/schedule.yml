@@ -18,7 +18,15 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10' # Or whichever version you prefer
+      # خطوة تسطيب المكتبات اللي ناقصة
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install gspread pandas requests numpy
 
+      # خطوة تشغيل الكود بتاعك
+      - name: Run Python script
+        run: python main.py
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
