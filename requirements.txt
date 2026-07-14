@@ -1,4 +1,4 @@
-streamlit
+gspread
+requests
 pandas
-plotly
 numpy
