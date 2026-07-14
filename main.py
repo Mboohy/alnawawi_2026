@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 import pandas as pd
 import numpy as np
-import gspread
+#import gspread
 
 # ==========================================
 # 1. CONFIGURATION & SETUP
