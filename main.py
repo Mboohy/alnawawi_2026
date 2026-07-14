@@ -12,16 +12,16 @@ import gspread
 # 1. CONFIGURATION & SETUP
 # ==========================================
 
-END_DATE = "2026-12-31" 
+END_DATE = "2027-12-31" 
 if datetime.now().strftime('%Y-%m-%d') > END_DATE:
     sys.exit(0)
 
-INSTITUTE_NAME = "Khalil"
-BASE_URL = "https://api.khalilfiqh.com"
+INSTITUTE_NAME = "alnawawi"
+BASE_URL = "https://api.alnawawifiqh.com"
 LOGIN_URL = f"{BASE_URL}/api/login"
-GOOGLE_SHEET_ID = "10BT1405GJLNm1sY_3zCpP9mTb7Q6xHQRvEjBiAv-QEA"
-ADMIN_EMAIL = "admin@khalilfiqh.com"
-ADMIN_PASSWORD = "+8@d#Nxv"
+GOOGLE_SHEET_ID = "1wnmPCki0VmbWgnuPdktBlnnoP_mi1VaDd382loCPcS8"
+ADMIN_EMAIL = "admin@alnawawifiqh.com"
+ADMIN_PASSWORD = "`P:;\3%v>x!:T8&%"
 
 URLS = {
     "students": f"{BASE_URL}/admin/accepted/users",
