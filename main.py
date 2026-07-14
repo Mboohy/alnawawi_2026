@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 import pandas as pd
 import numpy as np
-#import gspread
+import gspread
 
 # ==========================================
 # 1. CONFIGURATION & SETUP
@@ -21,7 +21,7 @@ BASE_URL = "https://api.alnawawifiqh.com"
 LOGIN_URL = f"{BASE_URL}/api/login"
 GOOGLE_SHEET_ID = "1wnmPCki0VmbWgnuPdktBlnnoP_mi1VaDd382loCPcS8"
 ADMIN_EMAIL = "admin@alnawawifiqh.com"
-ADMIN_PASSWORD = "`P:;\3%v>x!:T8&%"
+ADMIN_PASSWORD = r"`P:;\3%v>x!:T8&%"
 
 URLS = {
     "students": f"{BASE_URL}/admin/accepted/users",
@@ -134,9 +134,9 @@ today = datetime.now().strftime('%Y-%m-%d')
 students_params = {
     "format": "json", 
     "per_page": 100, 
-    "grade[]": 5,   # Replace X with the Khalil Grade ID
-    "year[]": 21,    # Replace Y with the Khalil Year ID
-    "from": "2026-04-01", # Widened the date just in case
+    "grade[]": 15,   # Replace X with the Khalil Grade ID
+    "year[]": 53,    # Replace Y with the Khalil Year ID
+    "from": "2026-10-31", # Widened the date just in case
     "to": today,
     "field": "name"
 }
