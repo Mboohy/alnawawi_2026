@@ -143,7 +143,7 @@ students_params = {
 
 upload_to_google_sheets(fetch_paginated_data(URLS['students'], students_params, "Students"), "students")
 # Applicants
-upload_to_google_sheets(fetch_paginated_data(URLS['applicants'], {"format": "json", "per_page": 100, "from": "2026-04-01", "to": today}, "Applicants"), "applicants")
+upload_to_google_sheets(fetch_paginated_data(URLS['applicants'], {"format": "json", "per_page": 100, "from": "2025-06-01", "to": today}, "Applicants"), "applicants")
 
 # Installments
 upload_to_google_sheets(fetch_paginated_data(URLS['payments'], {"format": "json", "per_page": 150, "from": "2026-04-01", "to": today, "type": "installments", "status": "accepted"}, "Installments"), "installments")
