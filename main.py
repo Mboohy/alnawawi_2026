@@ -136,7 +136,7 @@ students_params = {
     "per_page": 100, 
     "grade[]": 15,   # Replace X with the Khalil Grade ID
     "year[]": 53,    # Replace Y with the Khalil Year ID
-    "from": "2026-10-31", # Widened the date just in case
+    "from": "2025-06-01", # Widened the date just in case
     "to": today,
     "field": "name"
 }
